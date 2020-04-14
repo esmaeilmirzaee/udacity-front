@@ -1,0 +1,26 @@
+.container {
+  border: 1cm;
+  border-color: black;
+  box-shadow: 1px 2px 2px 1px gray;
+  width: 400px;
+  height: 750px;
+  padding: 20px;
+  align-content: center;
+}
+
+img {
+  width: 400px;
+}
+
+span {
+  font-weight: bold;
+}
+
+.card {
+  height: 350px;
+  width: 380px;
+  padding: 10px;
+  border-color: gray;
+  border-style: 10px solid;
+
+}

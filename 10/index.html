@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Common Responsive Patterns</title>
+  <style>
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .box {
+      height: 100px;
+      text-align: 100px;
+      width: 100%;
+    }
+    .dark_blue {
+      background-color: rgb(5, 51, 108);
+      width: 100%;
+    }
+    .light_blue {
+      background-color: rgb(22, 149, 228);
+      width: 100%;
+    }
+    .green {
+      background-color: green;
+      width: 100%;
+    }
+    .red {
+      background-color: red;
+      width: 100%;
+    }
+    .orange {
+      background-color: orange;
+      width: 100%;
+    } 
+    @media screen and (min-width: 450px) {
+      .light_blue, .green {
+        width: 50%;
+      }
+    }
+    @media screen and (min-width: 550px) {
+      .light_blue, .dark_blue {
+        width: 50%;
+      }
+      .orange, .red, .green {
+        width: 33.3%;
+      }
+    }
+    @media screen and (min-width: 700px) {
+      .container {
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box dark_blue"></div>
+    <div class="box light_blue"></div>
+    <div class="box green"></div>
+    <div class="box red"></div>
+    <div class="box orange"></div>
+  </div>  
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: bold;
+    }
+    .blue {
+      background-color: #02b3e4;
+    }
+    .boxed {
+      border: 2px solid #2e3d49;
+    }
+    .container {
+      background-color: #dbe2e8;
+      padding: 8px;
+    }
+    .child {
+      display: inline-block;
+      width: 50%;
+    }
+    .inline {
+      display: inline;
+      background-color: yellow;
+    }
+    .block {
+      display: block;
+      background-color: yellowgreen;
+    }
+    .inline_block {
+      display: inline-block;
+      border: 2px solid #2e3d49;
+      background-color: yellowgreen;
+      width: 300px;
+      height: 50px;
+    }
+    .relative {
+      position: relative;
+      top: 10px;
+      bottom: 10px;
+      left: 10px;
+      right: 10px;
+    }
+    div:nth-child(even) {
+      background-color: #02b3e4;
+    }
+    div:nth-child(odd) {
+      background-color: #ecc81a;
+    }
+    .shift {
+      position: relative;
+      top: 10px;
+      left: 10px;
+    }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <div class="">
+    <span class="relative inline_block">Lorem ipsum</span> dolor sit amet consectetur adipisicing elit. Culpa explicabo et facilis fuga id autem, iure sunt rerum labore? Quas consequatur amet ea quam sunt autem est. Nam, quas deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam perspiciatis quia exercitationem aperiam aspernatur beatae, quisquam aut facere <span class="inline">ea porro?</span> Quis eos assumenda facilis perspiciatis animi cupiditate autem consequatur? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum minima nostrum, alias nemo saepe perspiciatis quis consequatur aperiam facilis odit id numquam quae voluptates vero architecto perferendis nihil accusamus est! Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim commodi rem, veritatis alias mollitia doloribus quidem perspiciatis dicta accusamus itaque ipsa reiciendis eius ipsum officiis consequuntur consectetur autem quas laudantium.
+  </div>
+  <div class="container">
+    <div class="blue boxed child">Child 1</div><div class="blue boxed child">Child 2</div>
+    
+  </div>
+  <div>I'm an inline-block div!</div>
+  <div class="shift">I'm an inline-block div!</div>
+  <div>I'm an inline-block div!</div>
+</body>
+</html>
